@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Carrito de Compras</title>
+</head>
+<body>
+<h1>Carrito</h1>
+<ul id="carrito"></ul>
+<p>Total: MXN$<span id="total">0.00</span></p>
+<button onclick="vaciarCarrito()">Vaciar carrito</button>
+
+<h2>Formulario de compra</h2>
+<form onsubmit="return enviarFormulario()">
+<label>Nombre: <input type="text" required></label><br>
+<label>Dirección: <input type="text" required></label><br>
+<label>Correo: <input type="email" required></label><br>
+<button type="submit">Realizar pedido</button>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
